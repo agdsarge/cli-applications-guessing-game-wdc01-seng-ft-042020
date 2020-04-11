@@ -8,11 +8,12 @@ end
 def run_guessing_game
   pc_num = (rand(6) + 1)
   player_num = player_prompt
-  if player_num == pc_num
-    puts "You guessed the correct number"
+  if player_num == "exit"
+    puts "Goodbye!"
   elsif player_num == pc_num
     puts "You guessed the correct number"
-
+  else
+    puts "Sorry! The computer guessed #{pc_num}."
 end
 
 
