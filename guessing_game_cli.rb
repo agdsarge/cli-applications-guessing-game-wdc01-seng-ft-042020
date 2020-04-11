@@ -7,7 +7,7 @@ end
 
 def run_guessing_game
   pc_num = (rand(6) + 1)
-  player_num = player_prompt.to_s
+  player_num = player_prompt.to_i
   if player_num == "exit"
     puts "Goodbye!"
   end
